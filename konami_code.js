@@ -19,9 +19,9 @@ function init() {
     
     for(let i=0; i<codes; i++){
       if( myArray[i] === codes[i] ){
-        alert('You did it!')
+        return true
       } else {
-        return null
+        return false
       }
     }
   })
