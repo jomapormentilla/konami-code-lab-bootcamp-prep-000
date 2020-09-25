@@ -25,10 +25,4 @@ function init() {
       index = 0
     }
   })
-  
-  if(input === codes){
-    return true
-  } else {
-    return false
-  }
 }
