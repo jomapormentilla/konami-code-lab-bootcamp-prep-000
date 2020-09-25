@@ -11,11 +11,19 @@ const codes = [
   "a"
 ];
 
-let input = []
-
+let index = 0
 function init() {
   document.body.addEventListener('keydown', (event)=>{
-    input.push(event.key)
+    if(event.key === codes[index]){
+      index++
+      
+      if(index === codes.length){
+        alert('Well done!')
+        index = 0
+      }
+    } else {
+      index = 0
+    }
   })
   
   if(input === codes){
