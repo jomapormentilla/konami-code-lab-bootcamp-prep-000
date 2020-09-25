@@ -12,5 +12,17 @@ const codes = [
 ];
 
 function init() {
-  // your code here
+  let myArray = []
+  document.body.addEventListener('keydown', (event)=>{
+    let key = event.key;
+    myArray.push(key)
+    
+    for(let i=0; i<codes; i++){
+      if( myArray[i] === codes[i] ){
+        alert('You did it!')
+      } else {
+        return null
+      }
+    }
+  })
 }
