@@ -18,7 +18,7 @@ function init() {
       index++
       
       if(index === codes.length){
-        alert('Well done!')
+        alert('Hurray!')
         index = 0
       }
     } else {
