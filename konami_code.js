@@ -11,8 +11,9 @@ const codes = [
   "a"
 ];
 
+let input = []
+
 function init() {
-  let input = []
   document.body.addEventListener('keydown', (event)=>{
     input.push(event.key)
   })
